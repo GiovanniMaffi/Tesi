@@ -1,0 +1,25 @@
+body {
+  font-family: 'Arial Rounded MT Bold', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin: 80px 10px;
+}
+
+video {
+  width: 40vw;
+  height: 30vw;
+  margin: 2rem;
+  background: #000000;
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  font-family: 'Arial Rounded MT Bold', monospace;
+}
