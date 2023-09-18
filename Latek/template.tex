@@ -10,6 +10,9 @@
 \newenvironment{abstract}{}{}
 \usepackage{abstract}
 \usepackage{listings}
+\usepackage{newlfont}
+\usepackage{color}
+
 
 \usepackage{afterpage}
 
@@ -30,26 +33,68 @@
 \begin{document}
 		
 	\begin{titlepage}
-		\centering
-	%	\includegraphics[width=0.7]{img/Bitgold.jpg}
-		\vfill
-		{\bfseries\Large
-			\huge Il Futuro Delle Comunicazioni in tempo reale Con WebRTC \\
-			\vskip0.4cm
-			\normalfont	\LARGE Tesi Di Laurea \\
-			 Giovanni Maffi 0000948696
-			\vskip0.7cm
-		}    
-
-		\vfill
-		\vfill
+		\begin{center}
+			{{\Large{\textsc{Alma Mater Studiorum $\cdot$ Universit\`a di Bologna}}} \\ \large Campus di Cesena} 
+			\rule[0.1cm]{15.8cm}{0.1mm}
+			\rule[0.5cm]{15.8cm}{0.6mm}
+			\\\vspace{3mm}
+			
+			{\small{ DIPARTIMENTO DI INFORMATICA – SCIENZA E INGEGNERIA \\ 
+					Corso di Laurea in Ingegneria e Scienze Informatiche}}
+			
+		\end{center}
+		
+		\vspace{23mm}
+		
+		\begin{center}\textcolor{black}{
+				{\LARGE{\bf WebRTC: studio della tecnologia e casi d'uso}}\\
+		}\end{center}
+		
+		\vspace{25mm}
+		
+		\begin{center}
+			{\Large Elaborato in:\\
+			Programmazioni di reti}
+		\end{center}
+		
+		\vspace{25mm} \par \noindent
+		
+		\begin{minipage}[t]{0.47\textwidth}
+			{\large{\bf Relatore: \vspace{2mm}\\\textcolor{black}{
+						Prof. Andrea Piroddi}}}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.47\textwidth}\raggedleft \textcolor{black}{
+				{\large{\bf Presentata da:\vspace{2mm}\\Giovanni Maffi}}}
+		\end{minipage}
+		
+		\vspace{40mm}
+		
+		\begin{center}
+			Anno Accademico \textcolor{black}{2022/2023}
+		\end{center}
+		
 	\end{titlepage}
+	
+	\afterpage{\blankpage}
+	
+	\begin{flushright}
+		\thispagestyle{empty} 
+		\vspace*{100mm}
+		\Large \emph{"Sic Mundus Creatus Est"}
+	\end{flushright}
+	
 	\afterpage{\blankpage}
 	
 	\tableofcontents 
-	
+
 	\afterpage{\blankpage}
 	
+%	\begin{abstract}
+%		In questo documento viene analizzato WebRTC, una nuova tecnologia che rinnova le comunicazioni real-time tra più utenti tramite il solo utilizzo di un browser, permettendo di effettuare videochiamate. Il suo utilizzo si espande anche in altri ambienti, come quello del controllo remoto di dispositivi, utile per esempio per monitorare il funzionamento di macchinari. Verrà analizzato anche un progetto che permette di effettuare una chiamata tra un dottore e un paziente.
+%	\end{abstract}
+
+	\afterpage{\blankpage}
 	\chapter{Introduzione}
 	
 	Negli ultimi 150 anni l'uomo ha fatto passi da gigante nel settore tecnologico/informatico con alcune invenzioni così importanti da cambiare il suo modo di vivere: basti pensare alla televisione presente in ogni casa, all'evoluzione dei computer e degli smartphone e, soprattutto, ad Internet che ha permesso all'uomo di informarsi su un qualsiasi argomento e di interagire con tutti in tempo reale. A tal proposito, la possibilità di comunicare in tempo reale con altri utenti è possibile grazie all'utilizzo di vari protocolli che, però, richiedono sempre l'utilizzo di plugin o software esterni. Nonostante ciò, negli ultimi anni è stata creata e sviluppata una nuova tecnologia che permette una comunicazione in tempo reale senza l'utilizzo di elementi terzi ed è sempre più discussa ed utilizzata: si tratta di WebRTC (Web Real-Time Communication).
@@ -474,19 +519,21 @@
   	 
   	\chapter{Progetto}
   	\section{Introduzione}
-  	Il progetto proposto è una possibile applicazioni di telemedicina tra un dottore ed un paziente, che permette di effettuare una videochiamata con WebRTC e di mostrare a video le corrispettive temperature corporee per far si che un dottore possa verificare lo stato del suo paziente.  
+  	Il progetto proposto è una applicazione di videochiamata WebRTC tra due utenti con la possibilità di spedire file in totale sicurezza. E’ infatti garantita la privacy dei dati dal certificato SSL,
+  	indispensabile per l’attivazione della connessione WebRTC. In conseguenza di tale propensione di WebRTC alla protezione dei dati personali, una sua possibile applicazione è nel campo della telemedicina nel trasferimento dei dati tra un dottore ed un paziente. In questo caso WebRTC consente di effettuare una videochiamata e di spedire file testuali con relative informazioni mediche del paziente (come, per esempio, la temperatura corporea, le pulsazioni, l’elettrocardiogramma, l’ossimetria e altro) per far si che un dottore possa verificare lo stato del suo paziente.$\\$
+  	E' possibile visionare il funzionamento del progetto cliccando \textcolor{blue}{\href{https://www.youtube.com/watch?v=CIS8a7rEtUc}{qui}}.    
   	
   	\section{Strumenti utilizzati}
-	Per la realizzazione dell'applicazione sono stati utilizzati i due linguaggi Javascript (per il funzionamento) e HTML (per la pagina web). Il codice è stato scritto su Visual Studio Code, un editor di codice sorgente sviluppato da Microsoft. Per la fase di signaling è stato utilizzato Firebase, una piattaforma per la creazione di applicazioni per dispositivi mobili e web sviluppata da Google [https://it.wikipedia.org/wiki/Firebase]. Grazie a questa piattaforma è possibile creare un progetto con un database Firestore (un database flessibile e scalabile per lo sviluppo di dispositivi mobili, Web e server da Firebase) e collegarlo alla propria applicazione JS (sezione 5.3). Firebase è stato preferito a WebSocket perché a livello di codice è più semplice e veloce da implementare; inoltre ha funzioni di notifica utente ogni volta che avviene un cambiamento all'interno del DB Firestore. Infine è stato scelto di utilizzare Vite per la creazione dell'app. Vite è un impacchettatore e strumento di compilazione che fornisce caratteristiche salvavita come ad esempio l'Hot Module Reloading (HMR) durante lo sviluppo, ma converte inoltre il codice sorgente in HTML, CSS e JavaScript ottimizzati quando compila per produzione. 
+	Per la realizzazione dell'applicazione sono stati utilizzati i due linguaggi Javascript (per il funzionamento) e HTML (per la pagina web). Il codice è stato scritto su Visual Studio Code, un editor di codice sorgente sviluppato da Microsoft. Per la fase di signaling è stato utilizzato Firebase, una piattaforma per la creazione di applicazioni per dispositivi mobili e web sviluppata da Google [https://it.wikipedia.org/wiki/Firebase]. Grazie a questa piattaforma è possibile creare un progetto con un database Firestore (un database flessibile e scalabile per lo sviluppo di dispositivi mobili, Web e server da Firebase) e collegarlo alla propria applicazione JS. Firebase è stato preferito a WebSocket perché a livello di codice è più semplice e veloce da implementare; inoltre ha funzioni di notifica utente ogni volta che avviene un cambiamento all'interno del DB Firestore.
 	
 	\newpage
 	 
   	\section{Funzionamento}
   	\subsection{Creazione Certificato SSL}
-  	Prima di analizzare il funzionamento del progetto è necessario parlare dei certificati SSL. Il motivo per il quale un certificato diventa indispensabile in un'applicazione WebRTC è l'API getUserMedia perché, con l'uscita di Chrome 47 (2015), quest'API non è più supportata su pagine HTTP, ma solo su pagine HTTPS; infatti se utilizzata su pagina HTTP, getUserMedia restituirà un errore (NotAllowedError), cosa che non accade su una pagina HTTPS \cite{77}. getUserMedia però verifica solamente che la pagina sia HTPPS, senza controllare se il certificato sia approvato da una Certification Authority; quindi basta generare un certificato affinché l'applicazione funzioni. $\\$
+  	Prima di analizzare il funzionamento del progetto è necessario parlare dei certificati SSL. Il motivo per il quale un certificato diventa indispensabile in un'applicazione WebRTC è l'API getUserMedia perché, con l'uscita di Chrome 47 (2015), quest'API non è più supportata su pagine HTTP, ma solo su pagine HTTPS; infatti se utilizzata su pagina HTTP, getUserMedia restituirà un errore (NotAllowedError), cosa che non accade su una pagina HTTPS \cite{77}. getUserMedia però verifica solamente che la pagina sia HTTPS, senza controllare se il certificato sia approvato da una Certification Authority; quindi basta generare un certificato affinché l'applicazione funzioni. $\\$
   	Per la creazione del certificato sono state utilizzate tre funzioni di OpenSSL (uno strumento da riga di comando open source che consente agli utenti di eseguire varie attività relative a SSL) \cite{78}:
   	\begin{itemize}
-  		\item La prima serve per generare la chiave privata da 256 Byte utilizzata per abilitare la crittografia, salvando nel file domain.key.
+  		\item La prima serve per generare una chiave privata RSA a 256 Byte utilizzata per abilitare la crittografia, salvando nel file domain.key.
   		\begin{lstlisting}
     	openssl genrsa -out domain.key 2048
   		\end{lstlisting}
@@ -504,7 +551,7 @@
   	
   	
   	\subsection{Lato Server}
-  	Una volta creato il certificato SSL è possibile implementarlo nella pagina attraverso il file index.js che gestisce il lato server. Le principali funzioni utilizzate sono express, fs (file system) e https. Express, un framework per applicazioni web per Node.js, progettato per creare web application e API, viene utilizzato per due motivi: con il metodo get dice al server cosa fare quando viene chiamata una richiesta get sulla route specificata [https://expressjs.com/it/guide/routing.html]; i metodi use e static permettono di fornire al server i file nella cartella public (in questo caso style.css, client.js e main.js) [https://expressjs.com/en/starter/static-files.html]. Il framework fs ci permette di effettuare operazioni sui file presenti nel computer, come Leggere, Creare, Aggiornare, Cancellare e Rinominare i file. Il metodo readFileSync viene utilizzato per leggere il contenuto del chiave e del certificato per restituirlo nelle apposite variabili [https://www.geeksforgeeks.org/node-js-fs-readfilesync-method/]. Infine https viene utilizzata per creare il server con chiave, certificato e funzione di callback, mettendolo in ascolto sulla porta specificata (in questo caso la 8081). 
+  	Una volta creato il certificato SSL è possibile implementarlo nella pagina attraverso il file index.js che gestisce il lato server. Le principali funzioni utilizzate sono express, fs (file system) e https. Express, un framework per applicazioni web per Node.js, progettato per creare web application e API, viene utilizzato per due motivi: con il metodo get dice al server cosa fare quando viene chiamata una richiesta get sulla route specificata [https://expressjs.com/it/guide/routing.html]; i metodi use e static permettono di fornire al server i file nella cartella public (in questo caso style.css, client.js e main.js) [https://expressjs.com/en/starter/static-files.html]. Il framework fs ci permette di effettuare operazioni sui file presenti nel computer, come Leggere, Creare, Aggiornare, Cancellare e Rinominare i file. Il metodo readFileSync viene utilizzato per leggere il contenuto della chiave e del certificato per restituirlo nelle apposite variabili [https://www.geeksforgeeks.org/node-js-fs-readfilesync-method/]. Infine https viene utilizzata per creare il server con chiave, certificato e funzione di callback, mettendolo in ascolto sulla porta specificata (in questo caso la 8081). 
   	\begin{lstlisting}
   		var express = require('express');
   		var app = express();
@@ -523,7 +570,8 @@
   		
   		https.createServer({
   			key: privKey,
-  			cert: cert
+  			cert: cert,
+  			passphrase: 'qwerty'
   		}, app).listen(8081);
   	\end{lstlisting}$\\$
   
@@ -534,14 +582,14 @@
   	\begin{lstlisting}[
   		basicstyle=\small  		]
   		const firebaseConfig = {
-  			apiKey: "AIzaSyBmV9IylTt-jtvX5S3QbWXJ4z7TwrdTOxA",
-  			authDomain: "provavideochiamata-150f7.firebaseapp.com",
-  			databaseURL: "https://provavideochiamata-150f7-default-rtdb.
+  			apiKey: "GbRTScPBmV5IWaTt-kqxCV561bWJ4z7TRIlKpEu0Mo",
+  			authDomain: "videocall-150f7.firebaseapp.com",
+  			databaseURL: "https://videocall-150f7-default-rtdb.
   								firebaseio.com",
-  			projectId: "provavideochiamata-150f7",
-  			storageBucket: "provavideochiamata-150f7.appspot.com",
-  			messagingSenderId: "152256212377",
-  			appId: "1:152256212377:web:9fb71aa5ab27aadae8b708"
+  			projectId: "videocall-150f7",
+  			storageBucket: "videocall-150f7.appspot.com",
+  			messagingSenderId: "543562675407",
+  			appId: "1:157235812407:web:6OP11aa5ab27vPaLae8b708"
   		};
   		
   		firebase.initializeApp(firebaseConfig)
@@ -565,7 +613,7 @@
   		//HTML variables
   		...
   	\end{lstlisting}$\\$
-  	La seconda parte riguarda il funzionamento dei vari bottoni. Il primo gestisce l'accesso ai dispositivi dell'utente; prima di tutto viene creata la connessione peer tramite RTCPeerConnection, necessario per aggiungere le tracce audio e video alla variabile pc. Seguono poi le operazioni sugli stream locale e remoto. Sul primo richiamiamo il metodo getUserMedia per chiedere all'utente di concedere l'autorizzazione ad accedere al suo microfono e webcam; se concessa, tutte le tracce ottenute su localStream vengono aggiunte sulla variabile pc.
+  	La seconda parte riguarda il funzionamento dei vari pulsanti. Il primo gestisce l'accesso ai dispositivi dell'utente; prima di tutto viene creata la connessione peer tramite RTCPeerConnection, necessario per aggiungere le tracce audio e video alla variabile pc. Seguono poi le operazioni sugli stream locale e remoto. Sul primo richiamiamo il metodo getUserMedia per chiedere all'utente di concedere l'autorizzazione ad accedere al suo microfono e webcam; se concessa, tutte le tracce ottenute su localStream vengono aggiunte sulla variabile pc.
   	Lo stream remoto invece viene creato e riempito con tracce vuote tramite l'EventHandler ontrack di RTCPeerConnection (ogni volta che una traccia viene aggiunta alla variabile pc, ontrack viene lanciato eseguendo la funzione specificata). infine aggiungiamo i due stream alle variabili che gestiscono gli elementi video HTML.
   		\begin{lstlisting}[
   		basicstyle=\small  		]
@@ -665,15 +713,59 @@
   		};
   	\end{lstlisting}
   	\newpage
-  	Il quarto pulsante permette all'utente di riagganciare. Al suo interno viene semplicemente chiusa la connessione peer tramite il metodo close(), rimuove tutte le tracce dallo stream remoto (questo fa si che a fine chiamata l'elemento video dell'utente chiamato diventi nero e non rimanga l'ultimo frame ripreso dalla webcam) e si cancella l'ID della chiamata. $\\$
+  	Il quarto pulsante consente agli utenti di spedire i file con i dati diagnostici del paziente. Questo trasferimento è possibile grazie ad un Data Channel, impostato dal metodo createDataChannel di RTCPeerConnection. Una volta creato si gestisce l'evento onmessage, ovvero cosa deve fare il canale dati quando un messaggio viene spedito. Nel codice seguente osserviamo in particolare la funzione onMessageCallback nella quale, una volta che il file è stato spedito, viene creato nel browser di destinazione un nuovo Blob nel quale si caricano tutte le informazione del file ricevuto e successivamente si crea un link che, se cliccato, permette all'utente di scaricare il Blob appena creato.
+  	\begin{lstlisting}[basicstyle=\small]
+  		reciveBuffer = []
+  		pc = new RTCPeerConnection(servers);
+  		dataChannel = pc.createDataChannel('fileChannel', 
+  				{ negotiated: true, id: 0 });
+  		dataChannel.onmessage = onMessageCallback;
+  		
+  		function onMessageCallback(event) {
+  			receiveBuffer.push(event.data);
+  			
+  			const receivedFile = new Blob(receiveBuffer);
+  			receiveBuffer = [];
+  			
+  			downloadAnchor.href = URL.createObjectURL(receivedFile);
+  			downloadAnchor.download = "temperatura.txt"
+  			downloadAnchor.textContent =
+  			`Click to download the file`;
+  			downloadAnchor.style.display = 'block'; 
+  			console.log("file ricevuto");
+  		}
+  	\end{lstlisting} $\\$
+  	Nel pulsante di spedizione viene selezionato il file dall'elemento input HTML e tramite una variabile FileReader il contenuto del file viene letto, salvato su una variabile (data) e spedito tramite il metodo send di RTCDataChannel.
+  	\begin{lstlisting}[basicstyle=\small]
+  		sendButton.onclick = async () => {
+  			const file = fileInput.files[0];
+  			const reader = new FileReader();
+  			
+  			reader.onload = (event) => {
+  				const data = event.target.result;
+  				dataChannel.send(data);
+  				console.log("file spedito");
+  			};
+  			
+  			reader.readAsArrayBuffer(file);
+  		}
+  	\end{lstlisting}
+  	\newpage
+  	Infine, l'ultimo pulsante permette all'utente di riagganciare. Al suo interno viene semplicemente chiusa la connessione peer e il canale dati tramite il metodo close(), rimuove tutte le tracce dallo stream remoto e locale e si cancella l'ID della chiamata. $\\$
   	\begin{lstlisting}
   		hangupButton.onclick = async () => {
   			pc.close();
+  			dataChannel.close();
   			
   			remoteStream.getTracks().forEach(function(track){
   				track.stop();
   			});
   			remoteVideo.srcObject = remoteStream;
+  			
+  			localStream.getTracks().forEach(function(track) {
+  				track.stop();
+  			});
+  			webcamVideo.srcObject = localStream;
   			
   			callInput.value = "";
   		}
@@ -693,7 +785,8 @@
  	Il suo funzionamento si basa sull'utilizzo di pagine HTML, ma soprattutto di API Javascript, che permettono di utilizzare i dispositivi input audio e video dell'utente (MediaStream), creare una connessione con uno o più peer (RTCPeerConnection) e scambiare messaggi (RTCDataChannel). Utilizzando il protocollo UDP per il trasporto e la tecnologia ICE per trovare il percorso tra i due utenti, WebRTC consente una connessione veloce. La sicurezza è garantita grazie ai protocolli SRTP e DTLS, che crittano ed evitano l'intercettazione dei messaggi. Questo comunque non rende WebRTC completamente sicuro; infatti possono verificarsi delle perdite riguardanti gli IP degli utenti; l'utilizzo di una VPN, però, riduce sensibilmente questa potenziale falla nel sistema di sicurezza.$\\$
  	Dopo la sua creazione, tutti i browser e sistemi mobile si sono impegnati per renderlo utilizzabile tra browser differenti; infatti nel 2013 avviene la prima chiamata cross-browser. E' vero anche che i dispositivi Apple hanno iniziato a supportare questa tecnologia nel 2017 e ancora oggi risulta più problematica rispetto a quella su Android (per quanto riguarda iPhone) o su Chrome/FireFox (per quanto riguarda Safari).$\\$
  	Negli anni WebRTC ha trovato impiego in molti campi, primo fra tutti la didattica/lavoro a distanza.
- 	Ci sono due campi in particolare dove WebRTC viene già utilizzato, ma ha ancora molte potenzialità per il futuro; si parla dell'IoT e della telemedicina. Oggi, grazie a questa tecnologia, è possibile effettuare operazioni di automazione industriale e di monitoraggio remoto tramite dispositivi IoT oppure sedute mediche a distanza tra paziente e dottore con la telemedicina. In questo ambiente WebRTC potrebbe un giorno essere utilizzato non solo per effettuare chiamate di controllo, ma anche per eseguire operazioni mediche di tipo chirurgico oppure di trapianto d'organi effettuate tramite, per esempio, l'accesso remoto a macchinari appositi.
+ 	Ci sono due campi in particolare dove WebRTC viene già utilizzato, ma ha ancora molte potenzialità per il futuro; si parla dell'IoT e della telemedicina. Oggi, grazie a questa tecnologia, è possibile effettuare operazioni di automazione industriale e di monitoraggio remoto tramite dispositivi IoT oppure sedute mediche a distanza tra paziente e dottore con la telemedicina. In questo ambiente WebRTC potrebbe un giorno essere utilizzato non solo per effettuare chiamate di controllo, ma anche per eseguire operazioni mediche di tipo chirurgico oppure di trapianto d'organi effettuate tramite, per esempio, l'accesso remoto a macchinari appositi. $\\$
+ 	Il progetto sviluppato in questa tesi ha mostrato le potenzialità di questo strumento di comunicazione in un ambiente controllato come quello tra medico e paziente. Come sviluppo futuro si potrebbe pensare di automatizzare il riconoscimento dei dispositivi di diagnostica collegati al paziente e fare in modo che in chiamata il medico possa vedere il paziente e contemporaneamente in una finestra laterale leggere i dati istantanei delle misure restituite dai vari dispositivi, quali termometro, pulsossimetro, elettrocardiografo ed altre informazioni.
  	
  	\afterpage{\blankpage}
  	
@@ -985,5 +1078,9 @@
  		https://it.wikipedia.org/wiki/Certificate\_Signing\_Request
 	\end{thebibliography}
  
- 	
+ 		\afterpage{\blankpage}
+ 
+ 	\chapter*{Ringraziamenti}
+ 	Infine, volevo dedicare questa ultima pagina per ringraziare tutte le persone che mi hanno sostenuto in questi anni di università, a partire dal mio relatore di tesi Andrea Piroddi che, oltre ad avermi proposto l'argomento WebRTC, è sempre stato disponibile sia ad aiutarmi nella scrittura della tesi, sia a visionare il progresso del lavoro con riunioni settimanali.$\\$ Ringrazio la mia famiglia per avermi sostenuto moralmente ed economicamente e mi abbia spronato a raggiungere questo risultato. $\\$
+ 	In conclusione, Ringrazio i miei amici per aver reso questa esperienza universitaria più piacevole.
 \end{document}

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (MiKTeX 21.12) (format=lualatex 2022.9.1)  2 SEP 2023 15:45
+This is LuaHBTeX, Version 1.14.0 (MiKTeX 21.12) (format=lualatex 2022.9.1)  18 SEP 2023 17:02
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -364,6 +364,16 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
+("C:/Program Files/MiKTeX/tex/latex/base/newlfont.sty"
+Package: newlfont 1998/08/17 v2.2m Standard LaTeX package
+LaTeX Info: Redefining \em on input line 57.
+
+("C:/Program Files/MiKTeX/tex/latex/base/latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+))
 ("C:/Program Files/MiKTeX/tex/latex/tools/afterpage.sty"
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks26
@@ -378,31 +388,31 @@ File: l3backend-luatex.def 2021-10-18 L3 backend support: PDF output (LuaTeX)
 (./template.aux)
 \openout1 = template.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-0.
+3.
  ("C:/Program Files/MiKTeX/tex/latex/base/ts1cmr.fd"
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -459,7 +469,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 ("C:/Program Files/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg"
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 33.
 
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/nameref.sty"
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -472,547 +482,558 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count296
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
 
 (./template.out) (./template.out)
 \@outlinefile=\write3
 
 \openout3 = template.out
 \c@lstlisting=\count297
- [1
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 37
+.
+
+("C:/Program Files/MiKTeX/tex/latex/base/ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [1
 
 
-{C:/Users/Gio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1
+{C:/Users/Gio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2
 
-] (./template.toc [2])
+]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2] (./template.toc [3])
 \tf@toc=\write4
 
 \openout4 = template.toc
- [3]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
-[3
-
-]
-Chapter 1.
-[4]
+ [4]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
 [4
 
 ]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+[4]
+Chapter 1.
+[5]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+[5
+
+]
 Chapter 2.
-<img/TelEvo.png, id=289, 180.675pt x 135.6267pt>
+<img/TelEvo.png, id=302, 180.675pt x 135.6267pt>
 File: img/TelEvo.png Graphic file (type png)
 <use img/TelEvo.png>
-Package luatex.def Info: img/TelEvo.png  used on input line 63.
+Package luatex.def Info: img/TelEvo.png  used on input line 108.
 (luatex.def)             Requested size: 327.1945pt x 245.63858pt.
-[5<./img/TelEvo.png>]
-<img/VoIP.png, id=303, 639.13782pt x 478.78876pt>
+[6<./img/TelEvo.png>]
+<img/VoIP.png, id=317, 639.13782pt x 478.78876pt>
 File: img/VoIP.png Graphic file (type png)
 <use img/VoIP.png>
-Package luatex.def Info: img/VoIP.png  used on input line 75.
+Package luatex.def Info: img/VoIP.png  used on input line 120.
 (luatex.def)             Requested size: 327.1945pt x 245.10686pt.
- [6<./img/VoIP.png>] [7]
-<img/logoWebRTC.png, id=328, 493.3632pt x 478.6683pt>
+ [7<./img/VoIP.png>] [8]
+<img/logoWebRTC.png, id=342, 493.3632pt x 478.6683pt>
 File: img/logoWebRTC.png Graphic file (type png)
 <use img/logoWebRTC.png>
-Package luatex.def Info: img/logoWebRTC.png  used on input line 99.
+Package luatex.def Info: img/logoWebRTC.png  used on input line 144.
 (luatex.def)             Requested size: 233.71138pt x 226.74898pt.
- [8<./img/logoWebRTC.png>]
-[9]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
-[9
+ [9<./img/logoWebRTC.png>]
+[10]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
+[10
 
 ]
 Chapter 3.
-<img/architecture.PNG, id=354, 872.50969pt x 791.95876pt>
+<img/architecture.PNG, id=367, 872.50969pt x 791.95876pt>
 File: img/architecture.PNG Graphic file (type png)
 <use img/architecture.PNG>
-Package luatex.def Info: img/architecture.PNG  used on input line 124.
+Package luatex.def Info: img/architecture.PNG  used on input line 169.
 (luatex.def)             Requested size: 327.1945pt x 296.98381pt.
-[10<./img/architecture.PNG>]
-<img/triangolo.PNG, id=365, 853.1875pt x 467.7475pt>
+[11<./img/architecture.PNG>]
+<img/triangolo.PNG, id=378, 853.1875pt x 467.7475pt>
 File: img/triangolo.PNG Graphic file (type png)
 <use img/triangolo.PNG>
-Package luatex.def Info: img/triangolo.PNG  used on input line 139.
+Package luatex.def Info: img/triangolo.PNG  used on input line 184.
 (luatex.def)             Requested size: 327.1945pt x 179.38031pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--143
+Underfull \hbox (badness 10000) in paragraph at lines 178--188
 
  []
 
-[11<./img/triangolo.PNG>]
-<img/trapezio.PNG, id=377, 853.1875pt x 469.755pt>
+[12<./img/triangolo.PNG>]
+<img/trapezio.PNG, id=390, 853.1875pt x 469.755pt>
 File: img/trapezio.PNG Graphic file (type png)
 <use img/trapezio.PNG>
-Package luatex.def Info: img/trapezio.PNG  used on input line 147.
+Package luatex.def Info: img/trapezio.PNG  used on input line 192.
 (luatex.def)             Requested size: 327.1945pt x 180.15019pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--151
+Underfull \hbox (badness 10000) in paragraph at lines 189--196
 
  []
 
-[12<./img/trapezio.PNG>]
-<img/API.PNG, id=390, 1003.75pt x 471.7625pt>
+[13<./img/trapezio.PNG>]
+<img/API.PNG, id=403, 1003.75pt x 471.7625pt>
 File: img/API.PNG Graphic file (type png)
 <use img/API.PNG>
-Package luatex.def Info: img/API.PNG  used on input line 161.
+Package luatex.def Info: img/API.PNG  used on input line 206.
 (luatex.def)             Requested size: 327.1945pt x 153.7817pt.
- [13<./img/API.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+ [14<./img/API.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 185--188
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 230--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
-[15] [16] [17]
-<img/PilaProtocollare2.jpg, id=446, 645.41125pt x 327.2225pt>
+[16] [17] [18]
+<img/PilaProtocollare2.jpg, id=459, 645.41125pt x 327.2225pt>
 File: img/PilaProtocollare2.jpg Graphic file (type jpg)
 <use img/PilaProtocollare2.jpg>
-Package luatex.def Info: img/PilaProtocollare2.jpg  used on input line 227.
+Package luatex.def Info: img/PilaProtocollare2.jpg  used on input line 272.
 (luatex.def)             Requested size: 327.1945pt x 165.88765pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--231
+Underfull \hbox (badness 10000) in paragraph at lines 269--276
 
  []
 
-[18<./img/PilaProtocollare2.jpg>]
-<img/stun-server3.png, id=462, 487.8225pt x 207.77625pt>
+[19<./img/PilaProtocollare2.jpg>]
+<img/stun-server3.png, id=475, 487.8225pt x 207.77625pt>
 File: img/stun-server3.png Graphic file (type png)
 <use img/stun-server3.png>
-Package luatex.def Info: img/stun-server3.png  used on input line 250.
+Package luatex.def Info: img/stun-server3.png  used on input line 295.
 (luatex.def)             Requested size: 327.1945pt x 139.36153pt.
-<img/turn.jpg, id=465, 1927.2pt x 1084.05pt>
+<img/turn.jpg, id=478, 1927.2pt x 1084.05pt>
 File: img/turn.jpg Graphic file (type jpg)
 <use img/turn.jpg>
-Package luatex.def Info: img/turn.jpg  used on input line 258.
+Package luatex.def Info: img/turn.jpg  used on input line 303.
 (luatex.def)             Requested size: 280.4565pt x 157.75389pt.
- [19<./img/stun-server3.png><./img/turn.jpg>]
-<img/ICE.jpeg, id=480, 1927.2pt x 1084.05pt>
+ [20<./img/stun-server3.png><./img/turn.jpg>]
+<img/ICE.jpeg, id=493, 1927.2pt x 1084.05pt>
 File: img/ICE.jpeg Graphic file (type jpg)
 <use img/ICE.jpeg>
-Package luatex.def Info: img/ICE.jpeg  used on input line 266.
+Package luatex.def Info: img/ICE.jpeg  used on input line 311.
 (luatex.def)             Requested size: 420.67763pt x 236.62257pt.
 
-[20<./img/ICE.jpeg>] [21]
-<img/Signaling.png, id=500, 602.25pt x 416.55624pt>
+[21<./img/ICE.jpeg>] [22]
+<img/Signaling.png, id=513, 602.25pt x 416.55624pt>
 File: img/Signaling.png Graphic file (type png)
 <use img/Signaling.png>
-Package luatex.def Info: img/Signaling.png  used on input line 291.
+Package luatex.def Info: img/Signaling.png  used on input line 336.
 (luatex.def)             Requested size: 280.4565pt x 193.98903pt.
- [22<./img/Signaling.png>]
-<img/WebSocket.png, id=511, 303.38344pt x 172.39406pt>
+ [23<./img/Signaling.png>]
+<img/WebSocket.png, id=524, 303.38344pt x 172.39406pt>
 File: img/WebSocket.png Graphic file (type png)
 <use img/WebSocket.png>
-Package luatex.def Info: img/WebSocket.png  used on input line 299.
+Package luatex.def Info: img/WebSocket.png  used on input line 344.
 (luatex.def)             Requested size: 233.71138pt x 132.80696pt.
- [23<./img/WebSocket.png>]
-<img/WebRTCCallFlow.png, id=522, 1580.90625pt x 1264.725pt>
+ [24<./img/WebSocket.png>]
+<img/WebRTCCallFlow.png, id=535, 1580.90625pt x 1264.725pt>
 File: img/WebRTCCallFlow.png Graphic file (type png)
 <use img/WebRTCCallFlow.png>
-Package luatex.def Info: img/WebRTCCallFlow.png  used on input line 320.
+Package luatex.def Info: img/WebRTCCallFlow.png  used on input line 365.
 (luatex.def)             Requested size: 420.67763pt x 336.54pt.
 
-[24<./img/WebRTCCallFlow.png>]
-<img/BrowserS.png, id=537, 389.95688pt x 317.68687pt>
+[25<./img/WebRTCCallFlow.png>]
+<img/BrowserS.png, id=551, 389.95688pt x 317.68687pt>
 File: img/BrowserS.png Graphic file (type png)
 <use img/BrowserS.png>
-Package luatex.def Info: img/BrowserS.png  used on input line 335.
+Package luatex.def Info: img/BrowserS.png  used on input line 380.
 (luatex.def)             Requested size: 280.4565pt x 228.48714pt.
- [25<./img/BrowserS.png>]
-<img/MobileS.png, id=549, 656.4525pt x 285.31593pt>
+ [26<./img/BrowserS.png>]
+<img/MobileS.png, id=563, 656.4525pt x 285.31593pt>
 File: img/MobileS.png Graphic file (type png)
 <use img/MobileS.png>
-Package luatex.def Info: img/MobileS.png  used on input line 345.
+Package luatex.def Info: img/MobileS.png  used on input line 390.
 (luatex.def)             Requested size: 327.1945pt x 142.2092pt.
- [26<./img/MobileS.png>]
-<img/DTLS.png, id=560, 572.1375pt x 471.7625pt>
+ [27<./img/MobileS.png>]
+<img/DTLS.png, id=574, 572.1375pt x 471.7625pt>
 File: img/DTLS.png Graphic file (type png)
 <use img/DTLS.png>
-Package luatex.def Info: img/DTLS.png  used on input line 355.
+Package luatex.def Info: img/DTLS.png  used on input line 400.
 (luatex.def)             Requested size: 280.4565pt x 231.25201pt.
-[27<./img/DTLS.png>]
-<img/VPN.png, id=574, 1505.625pt x 723.45282pt>
+[28<./img/DTLS.png>]
+<img/VPN.png, id=587, 1505.625pt x 723.45282pt>
 File: img/VPN.png Graphic file (type png)
 <use img/VPN.png>
-Package luatex.def Info: img/VPN.png  used on input line 364.
+Package luatex.def Info: img/VPN.png  used on input line 409.
 (luatex.def)             Requested size: 327.1945pt x 157.21725pt.
- [28<./img/VPN.png>]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
-[28
+ [29<./img/VPN.png>]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.29'
+[29
 
 ]
 Chapter 4.
-<img/applicazioni.png, id=590, 843.90282pt x 435.87843pt>
+<img/applicazioni.png, id=603, 843.90282pt x 435.87843pt>
 File: img/applicazioni.png Graphic file (type png)
 <use img/applicazioni.png>
-Package luatex.def Info: img/applicazioni.png  used on input line 377.
+Package luatex.def Info: img/applicazioni.png  used on input line 422.
 (luatex.def)             Requested size: 327.1945pt x 169.0009pt.
-[29<./img/applicazioni.png>]
-<img/didattica.png, id=600, 896.59969pt x 600.74437pt>
+[30<./img/applicazioni.png>]
+<img/didattica.png, id=613, 896.59969pt x 600.74437pt>
 File: img/didattica.png Graphic file (type png)
 <use img/didattica.png>
-Package luatex.def Info: img/didattica.png  used on input line 390.
+Package luatex.def Info: img/didattica.png  used on input line 435.
 (luatex.def)             Requested size: 233.71138pt x 156.58401pt.
-<img/smartworking.jpg, id=602, 1284.8pt x 856.19875pt>
+<img/smartworking.jpg, id=615, 1284.8pt x 856.19875pt>
 File: img/smartworking.jpg Graphic file (type jpg)
 <use img/smartworking.jpg>
-Package luatex.def Info: img/smartworking.jpg  used on input line 396.
+Package luatex.def Info: img/smartworking.jpg  used on input line 441.
 (luatex.def)             Requested size: 233.71138pt x 155.74219pt.
- [30<./img/didattica.png><./img/smartworking.jpg>]
-[31]
-<img/telemedicina.jpg, id=625, 770.88pt x 217.5628pt>
+ [31<./img/didattica.png><./img/smartworking.jpg>]
+[32]
+<img/telemedicina.jpg, id=638, 770.88pt x 217.5628pt>
 File: img/telemedicina.jpg Graphic file (type jpg)
 <use img/telemedicina.jpg>
-Package luatex.def Info: img/telemedicina.jpg  used on input line 421.
+Package luatex.def Info: img/telemedicina.jpg  used on input line 466.
 (luatex.def)             Requested size: 327.1945pt x 92.3418pt.
- [32<./img/telemedicina.jpg>]
-<img/Cloud.png, id=637, 801.99625pt x 412.54124pt>
+ [33<./img/telemedicina.jpg>]
+<img/Cloud.png, id=650, 801.99625pt x 412.54124pt>
 File: img/Cloud.png Graphic file (type png)
 <use img/Cloud.png>
-Package luatex.def Info: img/Cloud.png  used on input line 434.
+Package luatex.def Info: img/Cloud.png  used on input line 479.
 (luatex.def)             Requested size: 327.1945pt x 168.30579pt.
- [33<./img/Cloud.png>]
-<img/RTCvsRTMP1.png, id=653, 1445.4pt x 587.19376pt>
+ [34<./img/Cloud.png>]
+<img/RTCvsRTMP1.png, id=667, 1445.4pt x 587.19376pt>
 File: img/RTCvsRTMP1.png Graphic file (type png)
 <use img/RTCvsRTMP1.png>
-Package luatex.def Info: img/RTCvsRTMP1.png  used on input line 447.
+Package luatex.def Info: img/RTCvsRTMP1.png  used on input line 492.
 (luatex.def)             Requested size: 420.67763pt x 170.90005pt.
- [34<./img/RTCvsRTMP1.png>]
-<img/TeamsvsZoom.png, id=669, 643.40375pt x 426.59375pt>
+ [35<./img/RTCvsRTMP1.png>]
+<img/TeamsvsZoom.png, id=683, 643.40375pt x 426.59375pt>
 File: img/TeamsvsZoom.png Graphic file (type png)
 <use img/TeamsvsZoom.png>
-Package luatex.def Info: img/TeamsvsZoom.png  used on input line 462.
+Package luatex.def Info: img/TeamsvsZoom.png  used on input line 507.
 (luatex.def)             Requested size: 233.71138pt x 154.9536pt.
- [35<./img/TeamsvsZoom.png>]
-<img/Microsoft-Teams-vs-Zoom.png, id=683, 964.60374pt x 1462.46375pt>
+ [36<./img/TeamsvsZoom.png>]
+<img/Microsoft-Teams-vs-Zoom.png, id=697, 964.60374pt x 1462.46375pt>
 File: img/Microsoft-Teams-vs-Zoom.png Graphic file (type png)
 <use img/Microsoft-Teams-vs-Zoom.png>
-Package luatex.def Info: img/Microsoft-Teams-vs-Zoom.png  used on input line 46
-9.
+Package luatex.def Info: img/Microsoft-Teams-vs-Zoom.png  used on input line 51
+4.
 (luatex.def)             Requested size: 280.4565pt x 425.19708pt.
- [36<./img/Microsoft-Teams-vs-Zoom.png>]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.36'
-[36
+ [37<./img/Microsoft-Teams-vs-Zoom.png>]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.37'
+[37
 
 ]
 Chapter 5.
-[37]
-Overfull \hbox (19.85594pt too wide) in paragraph at lines 499--500
+[38]
+Overfull \hbox (19.85594pt too wide) in paragraph at lines 546--547
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (19.85594pt too wide) in paragraph at lines 500--501
+Overfull \hbox (19.85594pt too wide) in paragraph at lines 547--548
 [][][][][][][][][][] 
  []
 
-[38]
-Overfull \hbox (5.62106pt too wide) in paragraph at lines 520--521
+[39]
+Overfull \hbox (5.62106pt too wide) in paragraph at lines 567--568
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
 
- []
-
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 533--535
-
- []
-
-
-Overfull \hbox (6.58206pt too wide) in paragraph at lines 538--539
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (36.58237pt too wide) in paragraph at lines 539--540
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (12.58212pt too wide) in paragraph at lines 540--541
-[][][][][][][][] 
- []
-
-
-Overfull \hbox (0.582pt too wide) in paragraph at lines 542--543
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (18.58218pt too wide) in paragraph at lines 575--576
-[][][][][][][][][][][][][][][][] 
  []
 
 [40]
-Overfull \hbox (18.58218pt too wide) in paragraph at lines 584--585
+Underfull \hbox (badness 10000) in paragraph at lines 581--583
+
+ []
+
+
+Overfull \hbox (12.58212pt too wide) in paragraph at lines 588--589
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (18.58218pt too wide) in paragraph at lines 623--624
+[][][][][][][][][][][][][][][][] 
+ []
+
+[41]
+Overfull \hbox (18.58218pt too wide) in paragraph at lines 632--633
 [][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--594
+Underfull \hbox (badness 10000) in paragraph at lines 640--642
 
  []
 
 
-Overfull \hbox (6.58206pt too wide) in paragraph at lines 609--610
-[][][][][][][][] 
- []
-
-[41]
-Overfull \hbox (0.582pt too wide) in paragraph at lines 636--637
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (6.58206pt too wide) in paragraph at lines 661--662
+Overfull \hbox (6.58206pt too wide) in paragraph at lines 657--658
 [][][][][][][][] 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
+Overfull \hbox (0.582pt too wide) in paragraph at lines 684--685
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.58206pt too wide) in paragraph at lines 709--710
+[][][][][][][][] 
+ []
+
+[43]
+Overfull \hbox (12.58212pt too wide) in paragraph at lines 730--731
+[][][][][][][][][][][][][][][][] 
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 754--755
 
  []
 
 
-Overfull \hbox (12.19112pt too wide) in paragraph at lines 673--674
+Overfull \hbox (12.19112pt too wide) in paragraph at lines 760--761
 [][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 680--681
+Overfull \hbox (12.19112pt too wide) in paragraph at lines 765--766
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--684
+Underfull \hbox (badness 10000) in paragraph at lines 775--776
 
  []
 
-[43]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.43'
-[43
+[45]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.45'
+[45
 
 ]
 Chapter 6.
-[44]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.44'
-[44
+[46]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.46'
+[46
 
 ]
 Appendix A.
-<img/VP8.png, id=902, 673.01437pt x 172.39406pt>
+<img/VP8.png, id=961, 673.01437pt x 172.39406pt>
 File: img/VP8.png Graphic file (type png)
 <use img/VP8.png>
-Package luatex.def Info: img/VP8.png  used on input line 705.
+Package luatex.def Info: img/VP8.png  used on input line 798.
 (luatex.def)             Requested size: 327.1945pt x 83.81093pt.
-[45<./img/VP8.png>]
+[47<./img/VP8.png>]
 Appendix B.
-<img/nat.png, id=914, 683.55376pt x 326.21875pt>
+<img/nat.png, id=973, 683.55376pt x 326.21875pt>
 File: img/nat.png Graphic file (type png)
 <use img/nat.png>
-Package luatex.def Info: img/nat.png  used on input line 712.
+Package luatex.def Info: img/nat.png  used on input line 805.
 (luatex.def)             Requested size: 327.1945pt x 156.15015pt.
-[46
+[48
 
 <./img/nat.png>]
 Appendix C.
-<img/HandshakeTLS.png, id=927, 2928.9425pt x 1673.25125pt>
+<img/HandshakeTLS.png, id=986, 2928.9425pt x 1673.25125pt>
 File: img/HandshakeTLS.png Graphic file (type png)
 <use img/HandshakeTLS.png>
-Package luatex.def Info: img/HandshakeTLS.png  used on input line 721.
+Package luatex.def Info: img/HandshakeTLS.png  used on input line 814.
 (luatex.def)             Requested size: 327.1945pt x 186.91776pt.
-[47
+[49
 
 <./img/HandshakeTLS.png>]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.47'
-[47
+warning  (pdf backend): ignoring duplicate destination with the name 'page.49'
+[49
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
+Underfull \hbox (badness 10000) in paragraph at lines 834--835
 []\TU/lmr/m/it/10.95 RTMP: Real Time Mes-sag-ing Pro-to-col\TU/lmr/m/n/10.95 : 
 https://www.ionos.it/digitalguide/siti-
  []
 
 
-Underfull \hbox (badness 3792) in paragraph at lines 762--763
+Underfull \hbox (badness 3792) in paragraph at lines 855--856
 []\TU/lmr/m/n/10.95 Tu-to-ri-al-s-Point. \TU/lmr/m/it/10.95 We-brtc Tu-to-rial\
 TU/lmr/m/n/10.95 : https://www.tu-to-ri-al-s-point.com/we-brtc/we-brtc_tu-to-
  []
 
 
-Underfull \hbox (badness 4467) in paragraph at lines 771--772
+Underfull \hbox (badness 4467) in paragraph at lines 864--865
 []\TU/lmr/m/it/10.95 What is an API (Ap-pli-ca-tion Pro-gram-ming In-ter-face)? \TU/lmr/m/n/10.95 : https://www.geeks-
  []
 
 
-Overfull \hbox (17.21878pt too wide) in paragraph at lines 774--775
+Overfull \hbox (17.21878pt too wide) in paragraph at lines 867--868
 []\TU/lmr/m/it/10.95 RTCPeer-Con-nec-tion\TU/lmr/m/n/10.95 : https://de-vel-oper
 .mozilla.org/en-US/docs/Web/API/RTCPeerConnection 
  []
 
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 801--802
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 894--895
 []\TU/lmr/m/it/10.95 In-tro-duc-tion to We-bRTC pro-to-cols\TU/lmr/m/n/10.95 : 
 https://de-vel-oper.mozilla.org/en-
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 810--811
+Underfull \hbox (badness 3668) in paragraph at lines 903--904
 []\TU/lmr/m/it/10.95 RTC-Dat-aChan-nel - We-bRTC Ex-plained\TU/lmr/m/n/10.95 : 
 https://www.on-sip.com/voip-resources/voip-
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 813--814
+Underfull \hbox (badness 2418) in paragraph at lines 906--907
 []\TU/lmr/m/it/10.95 Mi-crosoft Teams meet-ings on un-sup-ported browsers\TU/lm
 r/m/n/10.95 : https://learn.mi-crosoft.com/en-
  []
 
 
-Underfull \hbox (badness 1721) in paragraph at lines 840--841
+Underfull \hbox (badness 1721) in paragraph at lines 933--934
 []\TU/lmr/m/it/10.95 Ap-pli-ca-tions of We-bRTC in IoT\TU/lmr/m/n/10.95 : https:
 //www.iot-forall.com/use-cases-for-webrtc-in-iot-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 846--847
+Underfull \hbox (badness 10000) in paragraph at lines 939--940
 []\TU/lmr/m/n/10.95 An-to-nio Preucil (2021). \TU/lmr/m/it/10.95 Us-ing We-bRTC for a browser mul-ti-player game\TU/lmr/m/n/10.95 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 846--847
+Underfull \hbox (badness 10000) in paragraph at lines 939--940
 \TU/lmr/m/n/10.95 https://dev.to/bornfightcompany/using-webtrc-for-a-browser-mul
 tiplayer-game-in-theory-
  []
 
-[49]
-Underfull \hbox (badness 10000) in paragraph at lines 870--871
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 963--964
 []\TU/lmr/m/it/10.95 Teams: meet-ings, we-bi-nars, and live events\TU/lmr/m/n/1
 0.95 : https://learn.mi-crosoft.com/en-
  []
 
 
-Underfull \hbox (badness 3281) in paragraph at lines 873--874
+Underfull \hbox (badness 3281) in paragraph at lines 966--967
 []\TU/lmr/m/it/10.95 Mi-crosoft fo-rum\TU/lmr/m/n/10.95 : https://an-swers.mi-cr
 osoft.com/en-us/msteams/forum/all/teams-is-not-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--908
+Underfull \hbox (badness 10000) in paragraph at lines 999--1001
 []\TU/lmr/m/n/10.95 Mar-tin Meszaros: \TU/lmr/m/it/10.95 We-bRTC tri-an-gle ar-c
 hi-tec-ture\TU/lmr/m/n/10.95 : https://www.re-search-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 910--912
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1005
 []\TU/lmr/m/n/10.95 Mar-tin Meszaros: \TU/lmr/m/it/10.95 We-bRTC trape-zoid ar-c
 hi-tec-ture\TU/lmr/m/n/10.95 : https://www.re-search-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 910--912
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1005
 \TU/lmr/m/n/10.95 gate.net/figure/WebRTC-trapezoid-architecture-according-to-Mar
 uschke-et-al-27-and-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 914--916
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1009
 []\TU/lmr/m/n/10.95 Ak-shita Ku-mawat: \TU/lmr/m/it/10.95 What is an API (Ap-pli
 -ca-tion Pro-gram-ming In-ter-face)?\TU/lmr/m/n/10.95 :
  []
 
 
-Underfull \hbox (badness 5345) in paragraph at lines 918--920
+Underfull \hbox (badness 5345) in paragraph at lines 1011--1013
 []\TU/lmr/m/n/10.95 Omer Sayem: \TU/lmr/m/it/10.95 STUN,TURN and ICE servers - 
 NAT traver-sal for We-bRTC\TU/lmr/m/n/10.95 :
  []
 
 
-Underfull \hbox (badness 5985) in paragraph at lines 926--928
+Underfull \hbox (badness 5985) in paragraph at lines 1019--1021
 []\TU/lmr/m/n/10.95 Karthikeyan S: \TU/lmr/m/it/10.95 We-bRTC TURN Server: In-te
 r-nals and Be-yond\TU/lmr/m/n/10.95 : https://web-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 934--936
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1029
 []\TU/lmr/m/n/10.95 W3C: \TU/lmr/m/it/10.95 We-bRTC 1.0: Real-time Com-mu-ni-ca-
 tion Be-tween Browsers\TU/lmr/m/n/10.95 :
  []
 
-[50]
-Underfull \hbox (badness 10000) in paragraph at lines 949--951
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1044
 \TU/lmr/m/n/10.95 90-degli-italiani-e-favorevole-allintroduzione-delleducazione-
 finanziaria-nelle-scuole-e-l80-sul-
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 957--959
+Underfull \hbox (badness 1728) in paragraph at lines 1050--1052
 []\TU/lmr/m/n/10.95 Al-berto Gon-za-lez: \TU/lmr/m/it/10.95 We-bRTC Cloud Gam-in
 g: Un-box-ing Sta-dia\TU/lmr/m/n/10.95 : https://we-brtc.ven-
  []
 
 
-Underfull \hbox (badness 7667) in paragraph at lines 969--971
+Underfull \hbox (badness 7667) in paragraph at lines 1062--1064
 []\TU/lmr/m/it/10.95 Cosa è NAT e quali sono i van-taggi dei fire-wall NAT?\TU
 /lmr/m/n/10.95 : https://-com-mu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 976--978
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1071
 []\TU/lmr/m/it/10.95 Me-di-aDe-vices: ge-tUser-Me-dia() method\TU/lmr/m/n/10.95
  : https://de-vel-oper.mozilla.org/en-
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 984--986
+Underfull \hbox (badness 1082) in paragraph at lines 1077--1079
 []\TU/lmr/m/n/10.95 Wikipedia: \TU/lmr/m/it/10.95 Cer-tifi-cate Sign-ing Re-ques
 t\TU/lmr/m/n/10.95 : https://it.wikipedia.org/wik-i/Cer-tifi-cate_Sign-
  []
 
-[51] (./template.aux)
+[53]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.53'
+[53
+
+] [54] (./template.aux)
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 464897CE7CFCC8425CB40FADC638D7A7;6147.
 )
 
 Here is how much of LuaTeX's memory you used:
- 12983 strings out of 477867
+ 13128 strings out of 477867
  100000,552014 words of node,token memory allocated
  524 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 6 attribute, 60 glue_spec,
  6 attribute_list, 1 write nodes
-   avail lists: 2:1616,3:405,4:146,5:927,6:118,7:8270,8:84,9:2624,10:23,11:528
- 32621 multiletter control sequences out of 65536+600000
- 40 fonts using 3181079 bytes
+   avail lists: 2:1618,3:405,4:146,5:964,6:118,7:8270,8:84,9:2624,10:23,11:534
+ 32697 multiletter control sequences out of 65536+600000
+ 61 fonts using 4586391 bytes
  60i,7n,59p,1394b,798s stack positions out of 5000i,500n,10000p,200000b,80000s
 <//?/c:/program files/miktex/fonts/opentype/public/lm/lmroman10-italic.otf><//?/
 c:/program files/miktex/fonts/opentype/public/lm/lmromanslant10-regular.otf><//?
-/c:/program files/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><//?/c:/
-program files/miktex/fonts/opentype/public/lm/lmroman10-bold.otf><//?/c:/program
- files/miktex/fonts/opentype/public/lm/lmroman17-regular.otf><//?/c:/program fil
-es/miktex/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on template.pdf (60 pages, 3908842 bytes).
+/c:/program files/miktex/fonts/opentype/public/lm/lmroman10-bold.otf><//?/c:/pro
+gram files/miktex/fonts/opentype/public/lm/lmroman12-italic.otf><//?/c:/program 
+files/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><//?/c:/program files/m
+iktex/fonts/opentype/public/lm/lmroman10-regular.otf><//?/c:/program files/mikte
+x/fonts/opentype/public/lm/lmroman12-regular.otf><//?/c:/program files/miktex/fo
+nts/opentype/public/lm/lmromancaps10-regular.otf><C:/Program Files/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on template.pdf (66 pages, 3937854 bytes).
 
-PDF statistics: 1012 PDF objects out of 1200 (max. 8388607)
- 384 named destinations out of 1000 (max. 131072)
+PDF statistics: 1097 PDF objects out of 1200 (max. 8388607)
+ 428 named destinations out of 1000 (max. 131072)
  401 words of extra memory for PDF output out of 10000 (max. 100000000)
 
