@@ -27,25 +27,36 @@ const servers = {
 };
 
 let pc;
+let dataChannel;
 let localStream = null;
 let remoteStream = null;
 
+let receiveBuffer = [];
+
 // HTML elements
 const webcamButton = document.getElementById('webcamButton')
-const webcamVideo = document.getElementById('webcamVideo')
-const remoteVideo = document.getElementById('remoteVideo')
+const localWebcam = document.getElementById('localWebcam')
+const remoteWebcam = document.getElementById('remoteWebcam')
 const WebcamDisableButton = document.getElementById("webcamButtonStop")
-const callButton = document.getElementById('callButton');
+const startCallButton = document.getElementById('startCallButton');
 const callInput = document.getElementById('callInput');
 const answerButton = document.getElementById('answerButton');
 const hangupButton = document.getElementById('hangupButton');
+const sendButton = document.getElementById('sendButton');
+const fileInput = document.getElementById('fileInput');
+const downloadAnchor = document.getElementById('download');
+sendButton.disabled = true;
 WebcamDisableButton.disabled = true;
 answerButton.disabled = true;
+
+fileInput.addEventListener('change', handleFileInputChange, false);
 
 // 1) Setup media sources.
 
 webcamButton.onclick = async () => {
   pc = new RTCPeerConnection(servers);
+  dataChannel = pc.createDataChannel('fileChannel', { negotiated: true, id: 0 });
+  dataChannel.onmessage = onMessageCallback;
 
   localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true }) // Request for access to user stream.
   remoteStream = new MediaStream()
@@ -62,11 +73,11 @@ webcamButton.onclick = async () => {
     });
   };
 
-  webcamVideo.srcObject = localStream;
-  remoteVideo.srcObject = remoteStream;
+  localWebcam.srcObject = localStream;
+  remoteWebcam.srcObject = remoteStream;
 
   // Disable/enable buttons.
-  callButton.disabled = false;
+  startCallButton.disabled = false;
   answerButton.disabled = false;
   webcamButton.disabled = true
   WebcamDisableButton.disabled = false;
@@ -79,17 +90,17 @@ WebcamDisableButton.onclick = async () => {
   localStream.getTracks().forEach(function(track) {
     track.stop();
   });
-  webcamVideo.srcObject = localStream;
+  localWebcam.srcObject = localStream;
   
   // Disable/enable buttons
   webcamButton.disabled = false;
   WebcamDisableButton.disabled = true;
-  callButton.disabled = true;
+  startCallButton.disabled = true;
   answerButton.disabled = true;
 }
 
 // 2) Create an offer
-callButton.onclick = async () => {
+startCallButton.onclick = async () => {
   // Reference Firestore collections for signaling
   const callDoc = firestore.collection('calls').doc(); // Manage the answer and offer from both users.
   
@@ -176,28 +187,78 @@ answerButton.onclick = async () => {
       }
     });
   });
+  hangupButton.disabled = false;
 };
 
+// 4) send files
+sendButton.onclick = async () => {
+  const file = fileInput.files[0];
+  const reader = new FileReader();
 
-// 4) Hangup the call
+  // when the file is read by the FileReader, the result is put in the data variable and is sent with the send() method of datachannel
+  reader.onload = (event) => {
+    const data = event.target.result;
+    dataChannel.send(data);
+  };
+  
+  //reading the file
+  reader.readAsArrayBuffer(file);
+}
+
+// 5) Hangup the call
 hangupButton.onclick = async () => {
+  //closing the peer connection and the data channel
   pc.close();
+  dataChannel.close();
 
+  // Stop every track of the remote stream. This disables the webcam.
   remoteStream.getTracks().forEach(function(track){
     track.stop();
   });
-  remoteVideo.srcObject = remoteStream;
+  remoteWebcam.srcObject = remoteStream;
 
+  //Stop every track of the local stream. This disables the webcam.
   localStream.getTracks().forEach(function(track) {
     track.stop();
   });
-  webcamVideo.srcObject = localStream;
+  localWebcam.srcObject = localStream;
 
+  //delete the ID call
   callInput.value = "";
 
+  //able/disable HTML buttons
   webcamButton.disabled = false;
   WebcamDisableButton.disabled = true;
   hangupButton.disabled = true;
-  callButton.disabled = true;
+  startCallButton.disabled = true;
   answerButton.disabled = true;
+}
+
+//handler for .onmessage event
+function onMessageCallback(event) {
+  //push the received data into a buffer
+  receiveBuffer.push(event.data);
+
+  //create a Blob with the received data  
+  const receivedFile = new Blob(receiveBuffer);
+  
+  receiveBuffer = [];
+
+  //the download link is initialized
+  downloadAnchor.href = URL.createObjectURL(receivedFile);
+  downloadAnchor.download = "Dati_Medici.txt"
+  downloadAnchor.textContent =
+  `Click to download the file`;
+  downloadAnchor.style.display = 'block'; 
+}
+
+
+//handle the selection of the file to send
+async function handleFileInputChange() {
+  const file = fileInput.files[0];
+  if (!file) {
+    console.log('No file chosen');
+  } else {
+    sendButton.disabled = false;
+  }
 }

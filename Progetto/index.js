@@ -15,7 +15,6 @@ var cert = fs.readFileSync('certificates/domain.crt')
 
 https.createServer({
     key: privKey,
-    cert: cert
+    cert: cert,
+    passphrase: 'qwerty'
 }, app).listen(8081);
-
-

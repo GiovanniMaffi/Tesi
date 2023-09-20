@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <script type="module" src="main.js"></script>
-    <title>Prova Videochiamata</title>
+    <title>Videochiamata</title>
   </head>
   <body>
 
@@ -13,29 +13,32 @@
     <div class="videos">
       <span>
         <h3>Webcam dell'utente</h3>
-        <video id="webcamVideo" autoplay playsinline></video>
+        <video id="localWebcam" autoplay playsinline></video>
       </span>
       <span>
         <h3>Webcam dell'ospite</h3>
-        <video id="remoteVideo" autoplay playsinline></video>
+        <video id="remoteWebcam" autoplay playsinline></video>
       </span>
 
 
     </div>
 
-    <button id="webcamButton">Attiva Webcam</button>
-    <button id="webcamButtonStop">Disabilita Webcam</button>
+    <button id="webcamButton">Attiva webcam e microfono</button>
+    <button id="webcamButtonStop">Disabilita webcam e microfono</button>
     <h2>2. Crea una chiamata</h2>
-    <button id="callButton" disabled>Crea Chiamata (offerta)</button>
+    <button id="startCallButton" disabled>Crea Chiamata (offerta)</button>
 
     <h2>3. unisciti ad una chiamata</h2>
-    
     <label>Codice della chiamata: </label>
     <input id="callInput" />
     <button id="answerButton" disabled>Rispondi</button>
 
-    <h2>4. Riaggancia</h2>
+    <h2>4. spedisci file</h2>
+    <input id="fileInput" type="file" accept=".txt"/>
+    <button id="sendButton">Spedisci</button>
+    <a id="download"></a>
 
+    <h2>5. Riaggancia</h2>
     <button id="hangupButton" disabled>Riaggancia</button>
     
   </body>
